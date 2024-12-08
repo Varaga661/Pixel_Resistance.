@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Pocetna | Robonator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+          integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.getElementById("loader");
+            document.body.classList.add("loading");
+            setTimeout(() => {
+                loader.style.opacity = "0"; 
+                loader.style.visibility = "hidden";
+                document.body.classList.remove("loading"); 
+            }, 1000);
+        });
+    </script>
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- "Navbar" -->
+    <nav>
+        <div>
+            <img src="icon.png" alt="Company Logo" />
+            <p>Datum izlaska: 30/01/2025</p>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <label>
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="top-line common"></span>
+            <span class="middle-line common"></span>
+            <span class="bottom-line common"></span>
+        </div>
+        <div class="slide">
+            <h1>MENU</h1>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-web-awesome"></i> Početna</a></li>
+                <li><a href="komentari.html"><i class="fa-solid fa-comments"></i> Komentari</a></li>
+                <li><a href="index2.html"><i class="fas fa-user"></i> O nama</a></li>
+                <li><a href="updateovi.html"><i class="fa-solid fa-bug-slash"></i> Ažuriranja</a></li>
+                <li><a href="sastanci.html"><i class="fas fa-address-book"></i> Sastanci</a></li>
+            </ul>
+        </div>
+    </label>
+
+    <div class="container">
+        <!-- Leva strana - tekst -->
+        <div class="text-content">
+          <h1>O nečemu zanimljivom</h1>
+          <p>
+            Ovaj tekst može da opisuje bilo koju temu. Na primer, priča o inovacijama, tehnologiji 
+            ili nekom proizvodu koji želite da predstavite.
+          </p>
+        </div>
+    
+        <!-- Desna strana - video -->
+        <div class="video-content">
+          <video autoplay muted loop>
+            <source src="pozadinski.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+    <footer>Copyright &copy; 2025 VVV.</footer>
+</body>
+</html>
