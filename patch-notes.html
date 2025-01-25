@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ažuriranja</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="loadingOverlay">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="o-nama.html">O Nama</a></li>
+                <li><a href="patch-notes.html" class="active">Ažuriranja</a></li>
+                <li><a href="stanje.html">Stanje</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="patch-container">
+        <h1 data-aos="fade-up">Patch Notes</h1>
+        <p data-aos="fade-up" data-aos-delay="200">Pregledajte najnovije ažuriranja i unapređenja u igri.</p>
+
+        
+
+        <div class="patch-version" id="v1.0" data-aos="fade-left">
+            <h2>Verzija v0.1 - Početak</h2>
+            <p class="patch-date">Objavljeno: 3. 12. 2024.</p>
+            <div class="patch-details">
+                <div class="patch-item" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <h3>Vizuelna i funkcionalna ažuriranja</h3>
+                        <p>Dodato kretanje po mapi, pucanje, ubačeni neprijatelji, light ocluder i muzika u glavnom menu-u.</p>
+                    </div>
+                </div>
+                <div class="patch-item" data-aos="fade-up" data-aos -delay="100">
+                    <div>
+                        <h3>Razvijanje neprijatelja</h3>
+                        <p>Napravljen je neprijateljski AI, koji se kreće po mapi i napada neprijatelja kada ga uoči.</p>
+                    </div>
+                </div>
+                <div class="patch-item" data-aos="fade-up" data-aos -delay="100">
+                    <div>
+                        <h3>UI, muzika i cutscene</h3>
+                        <p>Napravljen UI za nivoe, muzika i odabir nivoa za prvi nivo.</p>
+                    </div>
+                </div>
+                <div class="patch-item" data-aos="fade-up" data-aos -delay="100">
+                    <div>
+                        <h3>Dodate mehanike</h3>
+                        <p>Dodata mehanika repetiranja.</p>
+                    </div>
+                </div>
+                <div class="patch-item" data-aos="fade-up" data-aos -delay="100">
+                    <div>
+                        <h3>Napravljen GUI</h3>
+                        <p>Dodat health bar i ammo count.</p>
+                    </div>
+                </div>
+                <div class="patch-item" data-aos="fade-up" data-aos -delay="100">
+                    <div>
+                        <h3>Dodati zvukovi, neprijatelji poboljšani</h3>
+                        <p>Puška ima zvuk pucnja i neprijatelji više ne pucaju kroz zid.</p>
+                    </div>
+                </div>
+                <div class="patch-item" data-aos="fade-up" data-aos -delay="100">
+                    <div>
+                        <h3>CPU particles</h3>
+                        <p>Dodati CPU particles kao efekat pri pogadjanju neprijatelja.</p>
+                    </div>
+                </div>
+                <div class="patch-item" data-aos="fade-up" data-aos -delay="100">
+                    <div>
+                        <h3>Kraj nivoa</h3>
+                        <p>Pri završetku nivoa igrač je vraćen u glavni menu.</p>
+                    </div>
+                </div>
+                <div class="patch-item" data-aos="fade-up" data-aos -delay="100">
+                    <div>
+                        <h3>Health pack</h3>
+                        <p>Dodati health pack-ovi kako bi se igrač regenerisao.</p>
+                    </div>
+                </div>
+                <div class="patch-item" data-aos="fade-up" data-aos -delay="100">
+                    <div>
+                        <h3>Zvukovi health pack-a</h3>
+                        <p>Pri kupljenju health pack-a čuje se zvuk.</p>
+                    </div>
+                </div>
+                <div class="patch-item" data-aos="fade-up" data-aos -delay="100">
+                    <div>
+                        <h3>Poboljšani boss</h3>
+                        <p>Boss juri igrača, igrač umire ako bude uhvaćen - Običan napad i AOE napad.</p>
+                    </div>
+                </div>
+                <div class="patch-item" data-aos="fade-up" data-aos -delay="100">
+                    <div>
+                        <h3>Glavni menu</h3>
+                        <p>Promene glavnog menu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2024 V<sup>3</sup></p>
+    </footer>
+
+    
+    <script>
+        document.body.classList.add("loading");
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        document.body.classList.remove("loading");
+        setTimeout(() => {
+            document.getElementById("loadingOverlay").style.display = "none";
+        }, 500); // Allow the fade-out to complete
+    }, 1000);
+});
+
+
+    </script>
+</body>
+</html>

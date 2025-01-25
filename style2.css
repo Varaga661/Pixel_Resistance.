@@ -1,0 +1,154 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background: linear-gradient(135deg, #f0f8ff, #e6e6fa);
+}
+
+/* Header */
+header {
+    background-color: #222;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(100vh - 120px); /* Adjust height based on header/footer size */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#comments {
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Comments Banner */
+#commentsBanner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#commentsBanner h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color: #444;
+}
+
+#commentsBanner p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Input Section */
+#inputSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#newComment {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+#charCount {
+    font-size: 0.9em;
+    color: #666;
+}
+
+#buttonGroup button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00f2ea;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #222;
+}
+
+#buttonGroup button:hover {
+    background-color: #00c7b5;
+}
+
+/* Comments Section */
+#commentList {
+    max-height: 400px;
+    overflow-y: auto;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comment {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease-out;
+}
+
+.comment:hover {
+    transform: translateY(-5px);
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

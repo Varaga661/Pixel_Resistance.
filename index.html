@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Resistance</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="loadingOverlay">
+        <div class="spinner"></div>
+    </div>
+    
+
+
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="o-nama.html">O Nama</a></li>
+                <li><a href="patch-notes.html">Ažuriranja</a></li>
+                <li><a href="stanje.html">Stanje</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="pozadinski.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content-overlay">
+            <h1>Dobrodošli u budućnost igrica!</h1>
+            <p>Doživite avanturu kavkvu još niste.</p>
+            <button onclick="location.href='https://youtu.be/6RUvb9mybJw'">Odgledajte Trailer</button>
+        </div>
+    </div>
+
+    <script>
+
+document.body.classList.add("loading");
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        document.body.classList.remove("loading");
+        setTimeout(() => {
+            document.getElementById("loadingOverlay").style.display = "none";
+        }, 500); // Allow the fade-out to complete
+    }, 1000);
+});
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
